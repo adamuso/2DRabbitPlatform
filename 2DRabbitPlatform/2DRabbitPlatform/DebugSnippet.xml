@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>
+        Debug
+      </Title>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>message</ID>
+          <Type>string</Type>
+          <ToolTip>Replace with a debug message.</ToolTip>
+          <Default>"debug"</Default>
+        </Literal>
+        <Object>
+          <ID>arg</ID>
+          <Type>object</Type>
+          <ToolTip>Replace with an object.</ToolTip>
+          <Default>""</Default>
+        </Object>
+      </Declarations>
+      <References>
+        <Reference>
+          <Assembly>System.dll</Assembly>
+        </Reference>
+      </References>
+      <Code Language="CSharp">
+        <![CDATA[Console.WriteLine("DEBUG: " + $message$ + $arg$);]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
